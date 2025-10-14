@@ -1,10 +1,6 @@
 // Add interactive features if required
 console.log("Welcome to Pronoy's Portfolio!");
-<<<<<<< HEAD
 const roles = ["Data Analyst","Researcher","NLP Expert", "Web Developer"];
-=======
-const roles = ["Researcher","Web Development", "App Development"];
->>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
 let currentRoleIndex = 0;
 
 function changeRole() {
@@ -39,13 +35,10 @@ changeRole();
 document.addEventListener("DOMContentLoaded", function () {
     const technologies = [
       "NLP",
-<<<<<<< HEAD
       "Metabase",
       "Superset",
       "Advanced SQL",
       "Automation",
-=======
->>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
       "ML",
       "Deep Learning",
       "TensorFlow",
@@ -70,11 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Django",
       "Flask",
       "Fast API",
-<<<<<<< HEAD
       "Advanced Excel"
-=======
-      "SQL"
->>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
     ];
   
     const techLine = document.getElementById("tech-line");
