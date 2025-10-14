@@ -532,7 +532,11 @@ body.dark-mode #about {
 }
 .about-container {
   display: flex;
+<<<<<<< HEAD
   /* align-items: center; */
+=======
+  align-items: center;
+>>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
   justify-content: center;
   gap: 30px;
   /* Gap between the image and text */
@@ -554,7 +558,11 @@ body.dark-mode #about {
 
 .about-content {
   max-width: 600px;
+<<<<<<< HEAD
   text-align: justify;
+=======
+  text-align: left;
+>>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
   line-height: 1.6;
 }
 
@@ -573,7 +581,11 @@ body.dark-mode #about {
 }
 
 .about-content p.about_name {
+<<<<<<< HEAD
   font-size: 15px;
+=======
+  font-size: 20px;
+>>>>>>> 87fd44c7554212f1c9ff7e6dc0bf3d805e00cc2c
 }
 
 .about-content h3 {
