@@ -1007,7 +1007,7 @@ body.dark-mode .projects{
 }
 
 .projects h2 {
-  font-size: 40px;
+  font-size: 36px;
   color: #333;
 }
 
@@ -1034,7 +1034,7 @@ body.dark-mode .projects{
   position: relative;
   width: 310px;
   /* Adjusted width to include padding */
-  height: 210px;
+  height: 250px;
   /* Adjusted height to include padding */
   background: #fff;
   border-radius: 10px;
@@ -1046,6 +1046,36 @@ body.dark-mode .projects{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+.project-details {
+  overflow-y: auto;
+  scrollbar-width: thin; /* show a small scrollbar in Firefox */
+}
+
+/* Show scrollbar for Chrome, Edge, Safari */
+.project-details::-webkit-scrollbar {
+  width: 10px;  /* scrollbar width */
+}
+
+.project-details::-webkit-scrollbar-track {
+  background: #f4f4f4;  /* scrollbar track color */
+}
+
+.project-details::-webkit-scrollbar-thumb {
+  background: #c1c1c1;  /* scrollbar thumb color */
+  border-radius: 8px;
+}
+
+.project-details::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;  /* slightly darker on hover */
+}
+
+.dark-mode .project-details::-webkit-scrollbar-track {
+  background: #333;
+}
+.dark-mode .project-details::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
 
 .dark-mode .project-card {
   background: #333;
@@ -1053,7 +1083,7 @@ body.dark-mode .projects{
 
 .project-card img {
   width: 100%;
-  height: 100%;
+  height: 160px;
   object-fit: contain;
   /* Ensures the entire image is visible with no cropping */
   border-radius: 5px;
@@ -1097,7 +1127,7 @@ body.dark-mode .projects{
 }
 
 .project-details h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
   margin-bottom: 10px;
 }
