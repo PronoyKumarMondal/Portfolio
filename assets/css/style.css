@@ -1429,7 +1429,7 @@ button:hover {
 }
 .photo-gallery {
   text-align: center;
-  padding: 60px 20px;
+  padding: 10px 20px;
 }
 
 body.dark-mode .photo-gallery {
