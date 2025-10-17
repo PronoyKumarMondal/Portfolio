@@ -1049,6 +1049,23 @@ body.dark-mode .rewards{
   color: #f0f0f0;
 }
 
+.experiance {
+  text-align: center;
+}
+
+body.dark-mode .experiance{
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+}
+
+.experiance h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.dark-mode .experiance h2 {
+  color: #f0f0f0;
+}
+
 .projects p {
   font-size: 18px;
   font-style: italic;
