@@ -26,10 +26,12 @@ header {
 }
 
 body.dark-mode header {
-  background: linear-gradient(45deg, #000820, #310000); /* Dark gradient background */
+  background: linear-gradient(45deg, #000820, #310000);
+  /* Dark gradient background */
   color: #1e1e1e;
   border-bottom: #121212;
 }
+
 /* Navbar container */
 .nav {
   display: flex;
@@ -129,16 +131,17 @@ body.dark-mode header {
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #ff4d4d;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(24px);
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
+
   /* Hide menu items by default */
   #mobile-menu {
     display: none;
@@ -154,9 +157,9 @@ input:checked + .slider:before {
     width: 200px;
   }
 
-body.dark-mode #mobile-menu {
-  background: #333;
-}
+  body.dark-mode #mobile-menu {
+    background: #333;
+  }
 
   /* Show the menu when toggled */
   #mobile-menu.show {
@@ -184,9 +187,9 @@ body.dark-mode #mobile-menu {
     border-radius: 2px;
   }
 
-.dark-mode .menu-icon div {
-  background: #f4f4f4;
-}
+  .dark-mode .menu-icon div {
+    background: #f4f4f4;
+  }
 
   /* Adjust links in the menu */
   #mobile-menu li {
@@ -204,9 +207,9 @@ body.dark-mode #mobile-menu {
     border-bottom: #121212;
   }
 
-.dark-mode #mobile-menu li a {
-  color: #f4f4f4;
-}
+  .dark-mode #mobile-menu li a {
+    color: #f4f4f4;
+  }
 
   #mobile-menu li a:hover {
     color: #ff4d4d;
@@ -244,13 +247,15 @@ body.dark-mode #mobile-menu {
 /* Global Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;
-  color: #f0f0f0; /* For all text */
+  color: #f0f0f0;
+  /* For all text */
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Ensure dark mode doesn't affect images or specific elements */
 .dark-mode img {
-  filter: brightness(1); /* Keep images normal */
+  filter: brightness(1);
+  /* Keep images normal */
 }
 
 
@@ -260,12 +265,12 @@ body.dark-mode {
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background: linear-gradient(45deg, #f4f4f4, #f4f4f4); 
+  background: linear-gradient(45deg, #f4f4f4, #f4f4f4);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode #home {
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); 
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
 }
 
 .intro {
@@ -289,7 +294,8 @@ body.dark-mode #home {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: transform 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease;
+  /* Smooth hover transition */
 }
 
 .dark-mode .intro h1 {
@@ -297,11 +303,13 @@ body.dark-mode #home {
 }
 
 .intro h1:hover {
-  transform: scale(1.05); /* Slight scale effect */
+  transform: scale(1.05);
+  /* Slight scale effect */
 }
 
 .intro h1 span {
-  color: #ca0303; /* Highlighted color */
+  color: #ca0303;
+  /* Highlighted color */
 }
 
 .intro p {
@@ -316,7 +324,8 @@ body.dark-mode #home {
   width: 30px;
   height: 35px;
   vertical-align: middle;
-  animation: bounce 1.5s infinite; /* Animated bounce effect */
+  animation: bounce 1.5s infinite;
+  /* Animated bounce effect */
 }
 
 /* Role Text Styling */
@@ -334,7 +343,8 @@ body.dark-mode #home {
   font-weight: bold;
   color: #333;
   opacity: 0;
-  animation: fadeInText 1s ease-in-out forwards 1.5s; /* Fade-in effect */
+  animation: fadeInText 1s ease-in-out forwards 1.5s;
+  /* Fade-in effect */
 }
 
 .dark-mode #role-text {
@@ -354,23 +364,28 @@ body.dark-mode #home {
 /* Color-changing animation for the arrow */
 @keyframes colorChange {
   0% {
-    color: #ff5733; /* Orange */
+    color: #ff5733;
+    /* Orange */
   }
 
   25% {
-    color: #ff8c00; /* Yellow */
+    color: #ff8c00;
+    /* Yellow */
   }
 
   50% {
-    color: #008080; /* Teal */
+    color: #008080;
+    /* Teal */
   }
 
   75% {
-    color: #00bfff; /* Light Blue */
+    color: #00bfff;
+    /* Light Blue */
   }
 
   100% {
-    color: #ff1493; /* Hot Pink */
+    color: #ff1493;
+    /* Hot Pink */
   }
 }
 
@@ -446,7 +461,8 @@ body.dark-mode .social-logos img:hover {
     align-items: center;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(45deg, #f4f4f4, #f4f4f4); /* Light gradient */
+    background: linear-gradient(45deg, #f4f4f4, #f4f4f4);
+    /* Light gradient */
   }
 
   .intro {
@@ -512,7 +528,9 @@ body.dark-mode .social-logos img:hover {
 
 /* Bounce effect for "Hi" gif */
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
 
@@ -528,8 +546,10 @@ body.dark-mode .social-logos img:hover {
 }
 
 body.dark-mode #about {
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
+
 .about-container {
   display: flex;
   /* align-items: center; */
@@ -566,6 +586,7 @@ body.dark-mode #about {
 .dark-mode .about-content h2 {
   color: #f0f0f0;
 }
+
 .about-content p.description {
   font-size: 18px;
   font-style: italic;
@@ -586,7 +607,7 @@ body.dark-mode #about {
 /* Ensure color of h3 and #tech-line don't change in dark mode */
 body.dark-mode h3,
 body.dark-mode #tech-line {
-  color: #ff4d4d ;
+  color: #ff4d4d;
 }
 
 .about-divider {
@@ -690,7 +711,8 @@ body.dark-mode #tech-line {
 }
 
 body.dark-mode #services {
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 #services h2 {
@@ -707,23 +729,32 @@ body.dark-mode #services {
 }
 
 /* Service Containers (Desktop) */
-.services-container0, .services-container1 {
+.services-container0,
+.services-container1 {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  gap: 30px; /* Adds spacing between cards */
-  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller screens */
+  gap: 30px;
+  /* Adds spacing between cards */
+  justify-content: center;
+  /* Centers the cards horizontally */
   margin: 20px 0;
 }
 
 /* Service Card Styling */
 .service-card1 {
-  position: relative; /* For proper positioning of children */
+  position: relative;
+  /* For proper positioning of children */
   text-align: center;
   transition: transform 0.3s ease;
-  width: 280px; /* Fixed card width */
-  height: 200px; /* Fixed card height */
-  perspective: 1000px; /* Apply 3D perspective */
-  margin: 20px 0; /* Add space between cards */  
+  width: 280px;
+  /* Fixed card width */
+  height: 200px;
+  /* Fixed card height */
+  perspective: 1000px;
+  /* Apply 3D perspective */
+  margin: 20px 0;
+  /* Add space between cards */
 }
 
 .service-card1:hover {
@@ -744,11 +775,13 @@ body.dark-mode #services {
 }
 
 /* Front and Back Styles */
-.service-card-front, .service-card-back {
+.service-card-front,
+.service-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hides the back when flipped */
+  backface-visibility: hidden;
+  /* Hides the back when flipped */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -773,7 +806,7 @@ body.dark-mode #services {
 }
 
 .dark-mode .service-card-back {
-  background-color: #333; 
+  background-color: #333;
 }
 
 /* Card Content */
@@ -814,25 +847,33 @@ body.dark-mode #services {
   }
 
   /* Service Cards: Stack Vertically */
-  .services-container0, .services-container1 {
+  .services-container0,
+  .services-container1 {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    gap: 20px; /* Space between cards */
-    align-items: center; /* Center-align cards */
-    width: 100%; /* Full width for container */
+    flex-direction: column;
+    /* Stack cards vertically */
+    gap: 20px;
+    /* Space between cards */
+    align-items: center;
+    /* Center-align cards */
+    width: 100%;
+    /* Full width for container */
   }
 
   /* Hover Effect for Service Card */
   .service-card1:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add deeper shadow on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Add deeper shadow on hover */
   }
 
   /* Service Card Content */
   .service-card-inner {
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.6s ease; /* Smooth flipping transition */
+    transition: transform 0.6s ease;
+    /* Smooth flipping transition */
     height: 100%;
   }
 
@@ -841,7 +882,8 @@ body.dark-mode #services {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide back when not flipped */
+    backface-visibility: hidden;
+    /* Hide back when not flipped */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -857,7 +899,8 @@ body.dark-mode #services {
 
   .service-card-back {
     background-color: #f7f7f7;
-    transform: rotateY(180deg); /* Flip effect for back */
+    transform: rotateY(180deg);
+    /* Flip effect for back */
   }
 
   /* Service Card Flipping on Hover */
@@ -867,7 +910,8 @@ body.dark-mode #services {
 
   /* Image and Text Styling */
   .service-card1 img {
-    width: 50%; /* Adjust image size for mobile */
+    width: 50%;
+    /* Adjust image size for mobile */
     height: auto;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -915,7 +959,8 @@ body.dark-mode #services {
 }
 
 .popup.hidden {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
 }
 
 .popup-content {
@@ -1002,8 +1047,9 @@ body.dark-mode #services {
   text-align: center;
 }
 
-body.dark-mode .projects{
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+body.dark-mode .projects {
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 .projects h2 {
@@ -1019,8 +1065,9 @@ body.dark-mode .projects{
   text-align: center;
 }
 
-body.dark-mode .publications{
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+body.dark-mode .publications {
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 .publications h2 {
@@ -1036,8 +1083,9 @@ body.dark-mode .publications{
   text-align: center;
 }
 
-body.dark-mode .rewards{
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+body.dark-mode .rewards {
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 .rewards h2 {
@@ -1053,8 +1101,9 @@ body.dark-mode .rewards{
   text-align: center;
 }
 
-body.dark-mode .experiance{
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+body.dark-mode .experiance {
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 .experiance h2 {
@@ -1098,32 +1147,39 @@ body.dark-mode .experiance{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+
 .project-details {
   overflow-y: auto;
-  scrollbar-width: thin; /* show a small scrollbar in Firefox */
+  scrollbar-width: thin;
+  /* show a small scrollbar in Firefox */
 }
 
 /* Show scrollbar for Chrome, Edge, Safari */
 .project-details::-webkit-scrollbar {
-  width: 10px;  /* scrollbar width */
+  width: 10px;
+  /* scrollbar width */
 }
 
 .project-details::-webkit-scrollbar-track {
-  background: #f4f4f4;  /* scrollbar track color */
+  background: #f4f4f4;
+  /* scrollbar track color */
 }
 
 .project-details::-webkit-scrollbar-thumb {
-  background: #c1c1c1;  /* scrollbar thumb color */
+  background: #c1c1c1;
+  /* scrollbar thumb color */
   border-radius: 8px;
 }
 
 .project-details::-webkit-scrollbar-thumb:hover {
-  background: #a0a0a0;  /* slightly darker on hover */
+  background: #a0a0a0;
+  /* slightly darker on hover */
 }
 
 .dark-mode .project-details::-webkit-scrollbar-track {
   background: #333;
 }
+
 .dark-mode .project-details::-webkit-scrollbar-thumb {
   background: #666;
 }
@@ -1231,7 +1287,8 @@ body.dark-mode .experiance{
 }
 
 body.dark-mode .contact-section {
-  background: linear-gradient(45deg, #1e1e1e, #1e1e1e); /* Dark gradient background */
+  background: linear-gradient(45deg, #1e1e1e, #1e1e1e);
+  /* Dark gradient background */
 }
 
 .container {
@@ -1243,18 +1300,20 @@ body.dark-mode .contact-section {
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
-  color: #333; /* Darker heading color */
+  color: #333;
+  /* Darker heading color */
 }
 
 .dark-mode .container h2 {
-  color: #f0f0f0; 
+  color: #f0f0f0;
 }
 
 .contact-info h2 {
   text-align: center;
   margin-bottom: 10px;
   font-size: 28px;
-  color: #333; /* Darker heading color */
+  color: #333;
+  /* Darker heading color */
 }
 
 .dark-mode .contact-info h2 {
@@ -1271,17 +1330,22 @@ body.dark-mode .contact-section {
 /* Contact Form */
 .contact-form {
   flex: 2;
-  background: #fff; /* White box */
+  background: #fff;
+  /* White box */
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #ddd; /* Light gray border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ddd;
+  /* Light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
 }
 
 .dark-mode .contact-form {
-  background: #333; /* Dark gray box */
-  border-color: #444; /* Darker border */
-  box-shadow: 0 2px 4px rgba(0, 0,)
+  background: #333;
+  /* Dark gray box */
+  border-color: #444;
+  /* Darker border */
+  box-shadow: 0 2px 4px rgba(0, 0, )
 }
 
 .contact-form h3 {
@@ -1313,15 +1377,17 @@ body.dark-mode .contact-section {
 
 input,
 textarea {
-  background: #f7f7f7; /* Light gray input background */
-  border: 1px solid #ccc; /* Light gray border */
+  background: #f7f7f7;
+  /* Light gray input background */
+  border: 1px solid #ccc;
+  /* Light gray border */
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.dark-mode input, 
+.dark-mode input,
 .dark-mode textarea {
   background: #333;
   border-color: #444;
@@ -1334,7 +1400,7 @@ textarea {
 }
 
 button {
-  background: #ff4d4d; 
+  background: #ff4d4d;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -1343,17 +1409,20 @@ button {
 }
 
 button:hover {
-  background: #dc7676; 
+  background: #dc7676;
 }
 
 /* Contact Info */
 .contact-info {
   flex: 1;
-  background: #fff; /* White box */
+  background: #fff;
+  /* White box */
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #ddd; /* Light gray border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #ddd;
+  /* Light gray border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
 }
 
 .dark-mode .contact-info {
@@ -1365,7 +1434,8 @@ button:hover {
 .contact-info p {
   margin-bottom: 15px;
   font-size: 16px;
-  color: #666; /* Subtle gray text */
+  color: #666;
+  /* Subtle gray text */
 }
 
 .dark-mode .contact-info p {
@@ -1390,10 +1460,12 @@ button:hover {
 
 .contact-info .icon {
   margin-right: 10px;
-  color: #ff4d4d; /* Blue icon */
+  color: #ff4d4d;
+  /* Blue icon */
 }
 
 @media (max-width: 768px) {
+
   /* Adjust the container padding */
   .contact-section {
     padding: 40px;
@@ -1401,16 +1473,21 @@ button:hover {
 
   /* Stack form and contact info vertically */
   .contact-content {
-    flex-direction: column; /* Stack the items vertically */
-    gap: 20px; /* Add spacing between stacked items */
+    flex-direction: column;
+    /* Stack the items vertically */
+    gap: 20px;
+    /* Add spacing between stacked items */
   }
 
   /* Make the contact form full width */
   .contact-form,
   .contact-info {
-    flex: unset; /* Reset flex size */
-    width: 100%; /* Take up full width */
-    box-sizing: border-box; /* Prevent padding from exceeding width */
+    flex: unset;
+    /* Reset flex size */
+    width: 100%;
+    /* Take up full width */
+    box-sizing: border-box;
+    /* Prevent padding from exceeding width */
   }
 
   .input-group {
@@ -1420,30 +1497,36 @@ button:hover {
   /* Adjust input fields and button size */
   input,
   textarea {
-    font-size: 14px; /* Slightly smaller text */
-    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 14px;
+    /* Slightly smaller text */
+    padding: 8px;
+    /* Adjust padding for smaller screens */
   }
 
   button {
     font-size: 14px;
-    padding: 8px 12px; /* Adjust button size */
+    padding: 8px 12px;
+    /* Adjust button size */
   }
 
   /* Reduce heading and text sizes */
   .container h2,
   .contact-form h3,
   .contact-info h2 {
-    font-size: 24px; /* Smaller heading size */
+    font-size: 24px;
+    /* Smaller heading size */
   }
 
   .contact-info p {
-    font-size: 14px; /* Smaller paragraph size */
+    font-size: 14px;
+    /* Smaller paragraph size */
   }
 
   .contact-info li {
     font-size: 14px;
   }
 }
+
 .photo-gallery {
   text-align: center;
   padding: 10px 20px;
@@ -1521,7 +1604,7 @@ body.dark-mode .photo-gallery {
 .gallery-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
@@ -1533,7 +1616,7 @@ body.dark-mode .photo-gallery {
 
 .gallery-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-card img {
@@ -1599,6 +1682,7 @@ footer {
   background: #1a1919;
   color: #ffffff;
 }
+
 .no-underline {
   text-decoration: none;
 }
